@@ -21,17 +21,32 @@ main {
   position: relative;
   width: 100px;
   height: 100px;
+}
+
+.planet-image {
+  width: 100%;
+  height: 100%;
   background-image: url('./images/행성1.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.planet::after {
+.planet-glow {
   position: absolute;
+  top: 0;
   z-index: -10;
-  content: '';
   width: 100%;
   height: 100%;
   background: radial-gradient(circle, rgba(224, 230, 28, 0.4) 50%, transparent 70%);
+}
+
+.action-btn {
+  padding: 20px;
+  border-radius: 10px;
+  font-size: larger;
+}
+
+.action-btn:hover {
+  background-color: beige;
 }
