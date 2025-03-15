@@ -1,4 +1,10 @@
+@font-face {
+  font-family: 'Dohyeon';
+  src: url(./assets/BMDOHYEON_otf.otf);
+}
+
 * {
+  font-family: 'Dohyeon';
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -50,8 +56,9 @@ main {
   padding: 20px;
   border-radius: 10px;
   font-size: larger;
+  transition: 0.1s all;
 }
 
 .action-btn:hover {
-  background-color: beige;
+  background-color: #aa7bc3;
 }
