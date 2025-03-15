@@ -17,6 +17,8 @@ main {
   place-items: center;
 }
 
+/* 행성이 디자인 */
+
 .planet {
   position: relative;
   width: 100px;
@@ -41,7 +43,10 @@ main {
   background: radial-gradient(circle, rgba(224, 230, 28, 0.4) 50%, transparent 70%);
 }
 
+/* 버튼 디자인 */
+
 .action-btn {
+  cursor: pointer;
   padding: 20px;
   border-radius: 10px;
   font-size: larger;
