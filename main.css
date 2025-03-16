@@ -23,7 +23,31 @@ main {
   place-items: center;
 }
 
+button {
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: larger;
+  color: #eee;
+  border: 2px solid #eee;
+  background: transparent;
+  border-radius: 10px;
+  transition: 0.1s all;
+}
+
+button:hover {
+  color: black;
+  background: #eee;
+}
+
 .solo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.many-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,16 +80,38 @@ main {
   background: radial-gradient(circle, rgba(224, 230, 28, 0.4) 50%, transparent 70%);
 }
 
-/* 버튼 디자인 */
-
-.action-btn {
-  cursor: pointer;
-  padding: 20px;
-  border-radius: 10px;
-  font-size: larger;
-  transition: 0.1s all;
+#red .planet-glow {
+  background: radial-gradient(circle, rgba(230, 38, 28, 0.4) 50%, transparent 70%);
+}
+#blue .planet-glow {
+  background: radial-gradient(circle, rgba(28, 129, 230, 0.4) 50%, transparent 70%);
+}
+#green .planet-glow {
+  background: radial-gradient(circle, rgba(82, 230, 28, 0.4) 50%, transparent 70%);
 }
 
-.action-btn:hover {
-  background-color: #aa7bc3;
+/* title */
+
+.title {
+  color: #eee;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
+
+/* CSS animation */
+@keyframes planetMove {
+  0% {
+    transform: translateX(-600px) rotate(0) scale(0.2);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(300px) rotate(1turn) scale(1);
+  }
+}
+
+/* .planet[id='blue'] {
+  animation: planetMove 3s forwards ease;
+} */

@@ -1,10 +1,10 @@
-const planet = document.querySelector('.planet');
+const soloPlanet = document.querySelector('.solo-container .planet');
 const timelineSlider = document.querySelector('input[id="timeline"]');
 const playButton = document.querySelector('button[id="play"]');
 const stopButton = document.querySelector('button[id="stop"]');
 const reverseButton = document.querySelector('button[id="reverse"]');
 
-const planetAnimation = planet.animate(
+const planetAnimation = soloPlanet.animate(
   [
     { transform: 'translateX(-360px) rotateZ(0deg)' },
     { transform: 'translateX(360px) rotateZ(1turn)' },

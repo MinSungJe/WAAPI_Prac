@@ -16,27 +16,30 @@
         </div>
         <div class="btn-container">
           <input id="timeline" type="range" min="0" max="3000" step="1" value="0" />
-          <button id="play" class="action-btn">움직이기</button>
-          <button id="stop" class="action-btn">멈추기</button>
-          <button id="reverse" class="action-btn">되돌리기</button>
+          <button id="play">움직이기</button>
+          <button id="stop">멈추기</button>
+          <button id="reverse">되돌리기</button>
         </div>
       </div>
 
       <div class="many-container">
-        <div class="planet">
-          <div class="planet-image"></div>
-          <div class="planet-glow"></div>
+        <div class="title">
+          <h1 class="title-text">7기 프론트엔드 밍고</h1>
+          <div id="red" class="planet">
+            <div class="planet-image"></div>
+            <div class="planet-glow"></div>
+          </div>
         </div>
-        <div class="planet">
-          <div class="planet-image"></div>
-          <div class="planet-glow"></div>
-        </div>
-        <div class="planet">
-          <div class="planet-image"></div>
-          <div class="planet-glow"></div>
+
+        <div class="btn-container">
+          <button id="play">Play</button>
+          <button id="stop">Stop</button>
+          <input id="manyTimeline" type="range" min="0" max="3000" step="1" value="0" />
         </div>
       </div>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
     <script src="solo.js"></script>
     <script src="many.js"></script>
   </body>
